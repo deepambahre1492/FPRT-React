@@ -16,7 +16,7 @@ import ConfirmForgotPassword from './pages/ConfirmForgotPassword/Confirm';
 import ChangePicture from './pages/ChangePicture/ChangePicture';
 import ResetMyPassword from './pages/ResetMyPassword/ResetMyPassword';
 import Profile from './pages/Profile/Profile';
-
+import Dashboard from './pages/Dashboard/Dashboard';
 
 import * as authActionCreators from './Redux/Actions/AuthActionCreators';
 
@@ -54,6 +54,8 @@ class App extends React.Component {
             <Route path="/auth/resetMyPassword" exact render={(props) => this.props.isAuthenticated ? <ResetMyPassword {...props} /> : <Redirect to='/auth/login' />}/>
             <Route path="/auth/changePicture" exact render={(props) => this.props.isAuthenticated ? <ChangePicture {...props} /> : <Redirect to='/auth/login' />}/>
             <Route path="/auth/profile" exact render={(props) => this.props.isAuthenticated ? <Profile {...props} /> : <Redirect to='/auth/login' />}/>
+            <Route path="/auth/dashboard" exact render={(props) => this.props.isAuthenticated ? <Dashboard {...props} /> : <Redirect to='/auth/login' />}/>
+            
 
 
             <Route render={() => <Redirect to='/' />} />

@@ -32,6 +32,7 @@ class Header extends Component {
                         </>
                         :
                         <>  
+                            <Link to="/auth/dashboard" className={styles.btn}>Dashboard</Link>
                             <Link to="/auth/profile" className={styles.btn}>Profile</Link>
                             <Link to="/auth/login" className={styles.btn} onClick={() => this.handleLogout()}>Logout</Link>
                         </>

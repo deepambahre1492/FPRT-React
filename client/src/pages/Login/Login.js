@@ -37,7 +37,7 @@ class Login extends Component {
         await this.props.login(email, password);
 
         if (this.props.isAuthenticated){
-            this.props.history.push('/');
+            this.props.history.push('/auth/dashboard');
         }
     }
 
