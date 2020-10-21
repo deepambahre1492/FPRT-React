@@ -1,0 +1,17 @@
+.FormBuilder{
+font-size: 15px;
+}
+.FormBuilder h3{
+    text-align: center;
+}
+
+.FormBuilder button{
+font-size: 15px;
+}
+.FormBuilder .form-control {
+    font-size: 1.6rem;
+}
+.FormBuilder h6{
+    font-size: 13px;
+}
+

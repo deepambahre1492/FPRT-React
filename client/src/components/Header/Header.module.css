@@ -19,8 +19,14 @@
     font-weight: 600;
     text-decoration:none;
     color:#fff;
+    
 }
 
+.logoImg{
+    width: auto;
+    max-height: 4rem;
+    margin-right: 1rem;
+}
 
 .nav{
     display: flex;
