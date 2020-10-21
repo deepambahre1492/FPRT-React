@@ -1,0 +1,34 @@
+.personDetails{
+    margin-top: 3rem;
+}
+.rowJustifyCenter{
+justify-content: center;
+text-align: center;
+}
+.profilePic{
+    width: auto;
+    height: 20rem;
+}
+.profileDetails{
+    position: relative;
+    top: 3rem;
+    font-size: 2rem;
+    text-align: left;
+}
+.profileDetails p{
+    line-height: 1.5rem; 
+}
+.changeContainer{
+    text-align: center;
+}
+.ChangeProfilefont{
+    position: relative;
+    top: 2rem;
+    background: #21232b;
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 0rem 1rem;
+}

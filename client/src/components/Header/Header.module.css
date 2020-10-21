@@ -1,0 +1,46 @@
+
+.header{
+    width: 100%;
+    /*max-width: 800px;*/
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #21232b;
+    color: white;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration:none;
+    color:#fff;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover{
+    color: red;
+}
+
+
+
+
