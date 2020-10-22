@@ -36,7 +36,7 @@ export const register = (username, email, password) => async (dispatch) => {
             dispatch({
                 type: actionTypes.CLEAR_ERRORS
             });
-        }, 3000);
+        }, 8000);
     }
 }
 
@@ -78,7 +78,7 @@ export const login = (email, password) => async (dispatch) => {
             dispatch({
                 type: actionTypes.CLEAR_ERRORS
             });
-        }, 3000);
+        }, 8000);
     }
 }
 
