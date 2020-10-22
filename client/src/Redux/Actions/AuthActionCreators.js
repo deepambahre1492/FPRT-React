@@ -15,7 +15,7 @@ export const register = (username, email, password) => async (dispatch) => {
 
         const body = {username, email, password};
 
-        // const res = await axios.post('http://localhost:8080/auth/register', body, config);
+        // const res = await axios.post('http://localhost:5000/auth/register', body, config);
         const res = await axios.post('/auth/register', body, config);
         // console.log(res.data);
         
@@ -59,7 +59,7 @@ export const login = (email, password) => async (dispatch) => {
 
         const body = {email, password};
 
-        // const res = await axios.post('http://localhost:8080/auth/login', body, config);
+        // const res = await axios.post('http://localhost:5000/auth/login', body, config);
         const res = await axios.post('/auth/login', body, config);
         // console.log(res.data);
 
@@ -110,7 +110,7 @@ export const getUser = () => async (dispatch, getState) => {
         
 
         const res = await axios.get('/auth/user', config);
-        // const res = await axios.get('http://localhost:8080/auth/user', config);
+        // const res = await axios.get('http://localhost:5000/auth/user', config);
         // console.log(res.data);
         dispatch({
             type: actionTypes.GET_USER,
@@ -152,7 +152,7 @@ export const forgotPassword = (email) => async (dispatch) => {
 
         const body = JSON.stringify({email: email});
 
-        // const res = await axios.post('http://localhost:8080/auth/forgotPassword', body, config);
+        // const res = await axios.post('http://localhost:5000/auth/forgotPassword', body, config);
         const res = await axios.post('/auth/forgotPassword', body, config);
 
         dispatch({
@@ -194,7 +194,7 @@ export const resetPassword = (password, token) => async (dispatch) => {
          //body
          const body = JSON.stringify({password: password});
 
-        // const res = await axios.post(`http://localhost:8080/auth/resetPassword/${token}`, body, config);
+        // const res = await axios.post(`http://localhost:5000/auth/resetPassword/${token}`, body, config);
         const res = await axios.post(`/auth/resetPassword/${token}`, body, config);
         
         dispatch({
@@ -230,7 +230,7 @@ export const resetMyPassword = (currentPassword, newPassword) => async (dispatch
          //body
          const body = JSON.stringify({currentPassword: currentPassword, newPassword: newPassword});
 
-        //  const res = await axios.post(`http://localhost:8080/auth/resetMyPassword`, body, config);
+        //  const res = await axios.post(`http://localhost:5000/auth/resetMyPassword`, body, config);
         await axios.post(`/auth/resetMyPassword`, body, config);
         //  console.log(res.data);
         
@@ -292,7 +292,7 @@ export const changePicture = (picture) => async (dispatch, getState) => {
             formData.append('profilePic', picture, picture.filename);
         }
 
-        // const res = await axios.patch(`http://localhost:8080/auth/changePicture`, formData, config);
+        // const res = await axios.patch(`http://localhost:5000/auth/changePicture`, formData, config);
         const res = await axios.patch(`/auth/changePicture`, formData, config);
         // console.log(res.data);
 

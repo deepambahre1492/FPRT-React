@@ -1,7 +1,6 @@
 
 import * as actionTypes from '../Actions/ActionTypes';
 
-
 const initialState = {
     error: ''
 };

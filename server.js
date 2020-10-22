@@ -20,8 +20,6 @@ cloudinary.config({
 
 const app = express();
 
-
-
 //MIDDLEWARES
 app.use(cors());
 if (process.env.NODE_ENV === 'development'){
@@ -37,13 +35,8 @@ app.use(bodyParser.json());
 app.use('/images' , express.static(path.join(__dirname, 'public', 'images')));
 app.use('/profile-pic' , express.static(path.join(__dirname, 'public', 'profilePic')));
 
-
-
 //ROUTES
 app.use('/auth', authRouter);
-
-
-
 
 if (process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'));
@@ -54,8 +47,7 @@ if (process.env.NODE_ENV === 'production'){
 
 }
 
-
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log('server listening on port ', PORT);
 });
