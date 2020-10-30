@@ -21,8 +21,8 @@ class Landing extends Component {
                 
 
                 <div className={styles.btns}>
-                    <div className={styles.login} onClick={() => this.props.history.push('/auth/login')}>Login</div>
-                    <div className={styles.register} onClick={() => this.props.history.push('/auth/register')}>Register</div>
+                    <div className={styles.login} onClick={() => this.props.history.push('/login')}>Login</div>
+                    <div className={styles.register} onClick={() => this.props.history.push('/register')}>Register</div>
 
                 </div>
                 

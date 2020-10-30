@@ -14,7 +14,7 @@ import * as authActionCreators from '../../Redux/Actions/AuthActionCreators';
 class Header extends Component {
     handleLogout = () => {
         this.props.logout();
-        this.props.history.push('/auth/login');
+        this.props.history.push('/login');
     }
 
     render() {
@@ -27,14 +27,14 @@ class Header extends Component {
                 <div className={styles.nav}>
                     {!this.props.isAuthenticated ? 
                         <>
-                            <Link to="/auth/login" className={styles.btn}>Login</Link>
-                            <Link to="/auth/register" className={styles.btn}>Register</Link>
+                            <Link to="/login" className={styles.btn}>Login</Link>
+                            <Link to="/register" className={styles.btn}>Register</Link>
                         </>
                         :
                         <>  
-                            <Link to="/auth/dashboard" className={styles.btn}>Dashboard</Link>
-                            <Link to="/auth/profile" className={styles.btn}>Profile</Link>
-                            <Link to="/auth/login" className={styles.btn} onClick={() => this.handleLogout()}>Logout</Link>
+                            <Link to="/dashboard" className={styles.btn}>Dashboard</Link>
+                            <Link to="/profile" className={styles.btn}>Profile</Link>
+                            <Link to="/login" className={styles.btn} onClick={() => this.handleLogout()}>Logout</Link>
                         </>
                         
                     }

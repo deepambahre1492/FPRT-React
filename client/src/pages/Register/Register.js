@@ -34,7 +34,7 @@ class Register extends Component {
 
         await this.props.register(username, email, password);
         if (this.props.registerSuccess){
-            this.props.history.push('/auth/confirmEmail');
+            this.props.history.push('/confirmEmail');
         }
     }
 
@@ -81,7 +81,7 @@ class Register extends Component {
                             {this.props.error ? <p style={{color: 'red'}}>{this.props.error}</p> : null }
                             <input className={styles.submit} type="submit" value="Submit" disabled={isSubmitting}/>
 
-                            <Link to="/auth/login" className={styles.link}>Already have an account? <span style={{fontWeight: '600'}}>Login</span></Link>
+                            <Link to="/login" className={styles.link}>Already have an account? <span style={{fontWeight: '600'}}>Login</span></Link>
                         </form>  
                 )}
                 </Formik>

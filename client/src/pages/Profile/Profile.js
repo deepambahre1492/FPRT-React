@@ -16,7 +16,7 @@ class Profile extends Component {
     handleLogout = () => {
         this.props.logout();
         this.props.toggleSidebar();
-        this.props.history.push('/auth/login');
+        this.props.history.push('/login');
     }
 
     render() {
@@ -37,9 +37,9 @@ class Profile extends Component {
     <Row className={styles.rowJustifyCenter}>
         <Col>
             <div className={styles.changeContainer}>                       
-                        <Link className={styles.ChangeProfilefont} to={`/auth/resetMyPassword`}><i className="fa fa-key" aria-hidden="true"></i></Link>
+                        <Link className={styles.ChangeProfilefont} to={`/resetMyPassword`}><i className="fa fa-key" aria-hidden="true"></i></Link>
                       
-                        <Link className={styles.ChangeProfilefont} to={`/auth/changePicture`}><i className="fa fa-upload" aria-hidden="true"></i></Link>
+                        <Link className={styles.ChangeProfilefont} to={`/changePicture`}><i className="fa fa-upload" aria-hidden="true"></i></Link>
             </div> 
         </Col>
     </Row>

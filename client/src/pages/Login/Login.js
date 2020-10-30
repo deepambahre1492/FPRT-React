@@ -37,7 +37,7 @@ class Login extends Component {
         await this.props.login(email, password);
 
         if (this.props.isAuthenticated){
-            this.props.history.push('/auth/dashboard');
+            this.props.history.push('/dashboard');
         }
     }
 
@@ -82,7 +82,7 @@ class Login extends Component {
 
                             <input className={styles.submit} type="submit" value="Submit" disabled={isSubmitting}/>
 
-                            <Link to='/auth/forgotPassword' className={styles.link}>Forgot your password?</Link>
+                            <Link to='/forgotPassword' className={styles.link}>Forgot your password?</Link>
                         </form>
 
                 )}

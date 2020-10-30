@@ -27,7 +27,7 @@ class ChangePicture extends Component {
         const res = await this.props.changePicture(this.state.selectedFile);
 
         if (!this.props.error && res.status === 'success'){
-            this.props.history.push('/auth/profile');
+            this.props.history.push('/profile');
 
         }
     }

@@ -23,7 +23,7 @@ class Confirm extends Component {
                 <h1 className={styles.header}>Password Reset Link Sent To Your Inbox</h1> 
                 <h3 className={styles.message}>Please use the link provided to reset your password</h3> 
 
-                <Link to='/auth/login' className={styles.home}>LOGIN</Link>
+                <Link to='/login' className={styles.home}>LOGIN</Link>
                 </div>
                 
             </div>
