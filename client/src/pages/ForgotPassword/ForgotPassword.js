@@ -37,7 +37,7 @@ class ForgotPassword extends Component {
         await this.props.forgotPassword(email);
 
         if (this.props.forgotPassword && !this.props.error){
-            this.props.history.push('/auth/confirmForgotPassword');
+            this.props.history.push('/confirmForgotPassword');
         }
 
 

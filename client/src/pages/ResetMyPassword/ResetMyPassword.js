@@ -34,7 +34,7 @@ class ResetMyPassword extends Component {
         if (currentPassword && password === confirmPassword){
             const res = await this.props.resetMyPassword(currentPassword, password)
             if (this.props.myPasswordChanged && res.status === 'success'){
-                this.props.history.push('/auth/profile');
+                this.props.history.push('/profile');
             }   
         }        
     }
