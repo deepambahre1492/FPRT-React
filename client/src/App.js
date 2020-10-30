@@ -45,16 +45,16 @@ class App extends React.Component {
             <Route path="/" exact component={Home} />
             {/* <Route path='/' exact component={Home} /> */}
             <Route path='/landing' exact render={(props) => (!this.props.isAuthenticated ? <Landing {...props}/> : <Redirect to='/' />)} />
-            <Route path="/auth/register" exact render={(props) => (!this.props.isAuthenticated ? <Register {...props}/> : <Redirect to="/" />)}/>
-            <Route path="/auth/login" exact render={(props) => (!this.props.isAuthenticated ? <Login {...props}/> : <Redirect to="/" />)}/>
-            <Route path="/auth/forgotPassword" exact component={ForgotPassword}/>
-            <Route path="/auth/reset-Password/:token" exact component={ResetPassword}/>
-            <Route path="/auth/confirmEmail" exact component={SuccessRegistered}/>
-            <Route path="/auth/confirmForgotPassword" exact component={ConfirmForgotPassword}/>
-            <Route path="/auth/resetMyPassword" exact render={(props) => this.props.isAuthenticated ? <ResetMyPassword {...props} /> : <Redirect to='/auth/login' />}/>
-            <Route path="/auth/changePicture" exact render={(props) => this.props.isAuthenticated ? <ChangePicture {...props} /> : <Redirect to='/auth/login' />}/>
-            <Route path="/auth/profile" exact render={(props) => this.props.isAuthenticated ? <Profile {...props} /> : <Redirect to='/auth/login' />}/>
-            <Route path="/auth/dashboard" exact render={(props) => this.props.isAuthenticated ? <Dashboard {...props} /> : <Redirect to='/auth/login' />}/>
+            <Route path="/register" exact render={(props) => (!this.props.isAuthenticated ? <Register {...props}/> : <Redirect to="/" />)}/>
+            <Route path="/login" exact render={(props) => (!this.props.isAuthenticated ? <Login {...props}/> : <Redirect to="/" />)}/>
+            <Route path="/forgotPassword" exact component={ForgotPassword}/>
+            <Route path="/reset-Password/:token" exact component={ResetPassword}/>
+            <Route path="/confirmEmail" exact component={SuccessRegistered}/>
+            <Route path="/confirmForgotPassword" exact component={ConfirmForgotPassword}/>
+            <Route path="/resetMyPassword" exact render={(props) => this.props.isAuthenticated ? <ResetMyPassword {...props} /> : <Redirect to='/auth/login' />}/>
+            <Route path="/changePicture" exact render={(props) => this.props.isAuthenticated ? <ChangePicture {...props} /> : <Redirect to='/auth/login' />}/>
+            <Route path="/profile" exact render={(props) => this.props.isAuthenticated ? <Profile {...props} /> : <Redirect to='/auth/login' />}/>
+            <Route path="/dashboard" exact render={(props) => this.props.isAuthenticated ? <Dashboard {...props} /> : <Redirect to='/auth/login' />}/>
             
 
 
